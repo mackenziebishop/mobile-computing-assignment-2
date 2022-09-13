@@ -29,6 +29,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onClickOfReset(_ sender: UIButton) {
+        firstNameTextField.text = ""
+        lastNameTextField.text = ""
+        fullNameLabel.text = ""
+        initialsLabel.text = ""
     }
     
 }
