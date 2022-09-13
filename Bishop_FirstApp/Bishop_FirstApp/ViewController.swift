@@ -21,10 +21,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func onClickOfSubmit(_ sender: Any) {
+    @IBAction func onClickOfSubmit(_ sender: UIButton) {
+        var first = firstNameTextField.text!
+        var last = lastNameTextField.text!
+        fullNameLabel.text = "Full Name: \(last), \(first)"
+        var initial = initialsLabel.text = "Initials: \(first.prefix(1))\(last.prefix(1))"
     }
     
-    @IBAction func onClickOfReset(_ sender: Any) {
+    @IBAction func onClickOfReset(_ sender: UIButton) {
     }
     
 }
